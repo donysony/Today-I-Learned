@@ -1,0 +1,16 @@
+### 백준문제풀이
+##### java로 입출력과 사칙연산 9번까지 풀었다
+
+## JAVA학습내용
+### BufferedReader/BufferedWriter : 버퍼를 이용해 읽고 쓰는 함수
+#### Scanner와의 차이점
+Scanner : 띄어쓰기와 엔터(개행문자)를 경계로 입력값을 인식하기 때문에 따로 가공할 필요가 없어 편리
+BufferedReader : 엔터만 경계로 인식하고 받은 데이터가 String으로 고정됨 = 데이터 가공 필요 But 빠름
+
+### BufferedReader사용방법
+readLine()을 사용해 데이터를 라인 단위로 읽는다
+readLine() 함수의 리턴값은 String으로 고정되기 때문에 다른 타입의 경우 형변환필요
+
+주의할점
+1. readLine()시 리턴값을 String으로 고정되기에 String이 아닌 다른타입으로 입력을 받으려면 형변환필수
+2. 예외처리 필수, 대개는 throws IOException을 통해 작업
